@@ -1,0 +1,98 @@
+/* StudentDetailsForm.css */
+
+/* StudentDetailsForm.css */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Crucial for consistent sizing */
+    height: 35px; /* Set a consistent height */
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") no-repeat right 8px center;
+    padding-right: 30px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 14px;
+        height: 30px; /* Adjust height for smaller screens */
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    form {
+        padding: 30px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 16px;
+        height: 40px; /* Adjust height for larger screens */
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
